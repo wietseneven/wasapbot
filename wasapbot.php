@@ -48,8 +48,8 @@ $restartMyself = function () {
 };
 set_exception_handler($restartMyself);
 register_shutdown_function($restartMyself);
-//pcntl_signal(SIGTERM, $restartMyself); // kill
-//pcntl_signal(SIGHUP,  $restartMyself); // kill -s HUP or kill -1
+pcntl_signal(SIGTERM, $restartMyself); // kill
+pcntl_signal(SIGHUP,  $restartMyself); // kill -s HUP or kill -1
 // pcntl_signal(SIGINT,  $restartMyself); // Ctrl-C
 
 echo "[$ke][".date('H:i:s')."] ----------------------------------------------------\n";
