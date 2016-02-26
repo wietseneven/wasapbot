@@ -6,6 +6,7 @@ class WhatsApiEventsManager
 
     public function bind($event, $callback)
     {
+        echo 'hi';
         $this->listeners[$event][] = $callback;
     }
 
