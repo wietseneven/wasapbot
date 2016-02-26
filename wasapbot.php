@@ -16,7 +16,7 @@
 //  uses Chat-API - https://github.com/WHAnonymous/Chat-API                                                        //
 // --------------------------------------------------------------------------------------------------------------- //
 
-error_reporting(E_ERROR | E_WARNING | E_PARSE);
+//error_reporting(E_ERROR | E_WARNING | E_PARSE);
 date_default_timezone_set('Europe/Amsterdam');
 $debug = false;
 
